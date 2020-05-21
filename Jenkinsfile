@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    PROJECT = "REPLACE_WITH_YOUR_PROJECT_ID"
+    PROJECT = "i-woodland-277308"
     APP_NAME = "gceme"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "jenkins-cd"
@@ -61,7 +61,7 @@ spec:
         }
       }
     }
-    stage('Deploy Canary') {
+    /*stage('Deploy Canary') {
       // Canary branch
       when { branch 'canary' }
       steps {
@@ -86,7 +86,7 @@ spec:
           sh("echo http://`kubectl --namespace=production get service/${FE_SVC_NAME} -o jsonpath='{.status.loadBalancer.ingress[0].ip}'` > ${FE_SVC_NAME}")
         }
       }
-    }
+    }*/
     stage('Deploy Dev') {
       // Developer Branches
       when {
