@@ -61,6 +61,7 @@ spec:
         }
       }
     }
+    // TODO
     /*stage('Deploy Canary') {
       // Canary branch
       when { branch 'canary' }
