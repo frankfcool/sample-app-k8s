@@ -92,8 +92,8 @@ spec:
       // Developer Branches
       /*when {
         not { branch 'master' }
-        not { branch 'canary' }*/
-      }
+        not { branch 'canary' }
+      }*/
       steps {
         container('kubectl') {
           // Create namespace if it doesn't exist
