@@ -18,8 +18,8 @@ metadata:
   name: default
 spec:
   hard:
-    memory: 2Gi
-    cpu: 2
-    pods: 4
+    memory: 1Gi
+    cpu: 1
+    pods: 2
     services: 2
     resourcequotas: 1
