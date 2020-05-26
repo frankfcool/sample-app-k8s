@@ -33,11 +33,11 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/i-woodland-277308/gceme:master.6
+        image: gcr.io/cloud-solutions-images/gceme:1.0.0
         resources:
           limits:
             memory: "500Mi"
-            cpu: "10m"
+            cpu: "100m"
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
